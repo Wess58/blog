@@ -1,0 +1,47 @@
+<div class="container loginCont ">
+  <div class="card text-center mt-5 p-5">
+    <h2 class="mb-5">LOGIN</h2>
+
+    <form class="mb-4" method="post">
+
+      <mat-form-field class="example-full-width mb-3" hideRequiredMarker>
+        <input matInput placeholder="Username or Email" required>
+        <mat-icon matSuffix>account_circle</mat-icon>
+
+      </mat-form-field>
+
+      <br>
+
+      <mat-form-field class="example-full-width mb-3" hideRequiredMarker>
+        <input matInput placeholder="Enter Password" [type]="hide ? 'text' : 'password'">
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+      </mat-form-field>
+
+      <br>
+
+      <button class="login" mat-flat-button color="primary">LOGIN</button>
+
+    </form>
+
+
+    <div class="row">
+
+      <div class="col-md-6 register">
+        <a href="/signUp">
+          <button mat-button> Register</button>
+        </a>
+      </div>
+
+      <div class="col-md-6 forgot">
+        <button mat-button>forgot password?</button>
+      </div>
+
+
+    </div>
+
+
+
+
+
+  </div>
+</div>

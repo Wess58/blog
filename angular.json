@@ -31,7 +31,9 @@
               "src/styles.sass",
               "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "./src/assets/semantic/dist/semantic.min.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {

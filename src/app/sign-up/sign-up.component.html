@@ -1,40 +1,42 @@
 <div class="container con">
   <div class="card text-center mt-5 p-5">
+    <h2 class="mb-5">SIGN UP</h2>
+
     <form class="example-form">
       <div class="row">
         <div class="col-md-6">
-          <mat-form-field class="example-full-width fname" hideRequiredMarker>
+          <mat-form-field class="example-full-width mb-3" hideRequiredMarker>
             <input matInput placeholder="First Name" required>
           </mat-form-field>
         </div>
         <div class="col-md-6">
-          <mat-form-field class="example-full-width lname" hideRequiredMarker>
+          <mat-form-field class="example-full-width mb-3" hideRequiredMarker>
             <input matInput placeholder="Last Name" required>
           </mat-form-field>
         </div>
 
       </div>
 
-      <mat-form-field class="example-full-width email" hideRequiredMarker>
+      <mat-form-field class="example-full-width mb-3" hideRequiredMarker>
         <input matInput placeholder="Email" [formControl]="email" required>
         <mat-error *ngIf="email.valid"> {{getErrorMessage()}}</mat-error>
       </mat-form-field>
-      <mat-form-field class="example-full-width" hideRequiredMarker>
+      <mat-form-field class="example-full-width mb-3" hideRequiredMarker>
         <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" required>
         <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
           <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
         </button>
       </mat-form-field>
-      <mat-form-field class="example-full-width phone">
+      <mat-form-field class="example-full-width mb-3">
         <span matPrefix>+254 &nbsp;</span>
         <input type="tel" matInput placeholder="Telephone">
         <mat-icon matSuffix>mode_edit</mat-icon>
       </mat-form-field>
-      <mat-form-field class="example-full-width organization" hideRequiredMarker>
+      <mat-form-field class="example-full-width mb-3" hideRequiredMarker>
         <input matInput placeholder="Organization" required>
       </mat-form-field>
-      <div class="example-button-row">
-        <button mat-raised-button color="primary">Sign Up</button>
+      <div class="example-button-row mb-3">
+        <a href="/home"><button mat-raised-button color="primary">Sign Up</button></a>
       </div>
     </form>
     <div class="login">
